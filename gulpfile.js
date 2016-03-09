@@ -72,8 +72,8 @@ gulp.task('styles', function () {
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('./www/css/'))
 		.pipe(rename({suffix: '.min'}))
-        .pipe(minifyCss())
-        .pipe(gulp.dest('./www/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('./www/css/'))
 		.pipe(notify({ message: 'Styles builded' }));
 });
 
